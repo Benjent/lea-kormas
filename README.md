@@ -1,6 +1,6 @@
 # Léa Kormas' website - Animal Osteopath
 
-<img src="/public/logo.png" width="200" alt="Léa Kormas logo" />
+<img src="/public/logo.webp" width="200" alt="Léa Kormas logo" />
 
 Website built with Astro and TailwindCSS.
 
