@@ -1,0 +1,37 @@
+---
+interface Props {
+	title: string;
+	description: string;
+}
+
+const { description, title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="fr" class="bg-white">
+	<head>
+		<meta charset="UTF-8" />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="icon" href="/favicon.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	</head>
+	<body class="text-wood-500 font-body">
+		<header class="bg-wood-500 text-white font-heading px-2 py-3 md:px-8 md:py-4 sticky top-0 z-10 flex flex-col md:flex-row gap-2 justify-between items-center">
+			<!-- TODO logo white -->
+			<span class="text-xs md:text-base"><img src="/logo.png" class="w-6 md:w-8 inline-block mr-4" />Ostéopathe Animalier Savoie - Léa Kormas</span>
+			<nav class="flex gap-8 text-sm md:text-base">
+				<a href="#accueil" class="hover:text-wood-200">Accueil</a>
+				<a href="#prestations" class="hover:text-wood-200">Prestations</a>
+				<a href="#actualite" class="hover:text-wood-200">Actualité</a>
+				<a href="#contact" class="hover:text-wood-200">Contact</a>
+			</nav>
+		</header>
+		<slot />
+	</body>
+</html>

@@ -1,0 +1,172 @@
+---
+import EnvelopeIcon from 'astro-heroicons/outline/Envelope.astro';
+import PhoneIcon from 'astro-heroicons/outline/Phone.astro';
+import Layout from '../layouts/Layout.astro';
+
+const fullName = "Léa Kormas"
+const id = "OA1132"
+const tagLine = "Ostéopathe Animalier"
+const phone = "07 61 45 06 73"
+const email = "leakormas.osteo@gmail.com"
+const facebook = "https://www.facebook.com/people/Ost%C3%A9opathe-Animalier-Savoie-L%C3%A9a-Kormas-OA-1132/100087652673371/"
+---
+
+<Layout title="Léa Kormas - Ostéopathe Animalier Savoie" description="TODO">
+	<main class="" id="accueil">
+		<!-- Intro -->
+		<section class="max-w-[1020px] w-full m-auto p-12">
+			<div class="flex items-center">
+				<img src="/logo.png" class="w-40 sm:w-60 md:w-80" />
+				<div>
+					<h1 class="font-heading text-4xl md:text-8xl">{fullName}</h1>
+					<p class="font-heading text-2xl md:text-4xl">{tagLine}</p>
+				</div>
+			</div>
+			<p class="text-lg md:text-xl">L'ostéopathie, c'est important, ok ? Je suis disponible sur tout le secteur Savoie.</p>
+		</section>
+
+		<!-- When & why -->
+		<section class="max-w-[1020px] w-full m-auto p-12" id="prestations">
+			<h2 class="font-heading text-3xl md:text-5xl mb-16">Quand et pourquoi ?</h2>
+
+			<h3 class="font-heading text-2xl md:text-3xl mb-12">Motifs de consultation - Pour tous les animaux</h3>
+			<div class="columns-1 sm:columns-2 md:columns-3 gap-4 mb-12">
+				<div class="bg-wood-200 rounded-3xl p-4 text-center break-inside-avoid">
+					<h4 class="font-heading text-lg uppercase font-bold mb-6">Troubles locomoteurs</h4>
+					<ul class="text-slate-400 italic">
+						<li>Boiterie</li>
+						<li>Allure irrégulière</li>
+						<li>Démarche asymétrique</li>
+						<li>Asymétrie musculaire</li>
+						<li>Défaut d'aplombs</li>
+						<li>Douleur dorsale</li>
+						<li>Post-traumatisme/accident</li>
+						<li>Suivi de croissance</li>
+						<li>Post-opératoire</li>
+						<li>Sportif</li>
+					</ul>
+				</div>
+				<div class="bg-wood-200 rounded-3xl p-4 text-center break-inside-avoid mt-4">
+					<img src="/logo.png" class="mx-auto w-80" />
+				</div>
+				<div class="bg-wood-200 rounded-3xl p-4 text-center break-inside-avoid mt-4">
+					<h4 class="font-heading text-lg uppercase font-bold mb-6">Collaborations vétérinaires</h4>
+					<ul class="text-slate-400 italic">
+						<li>Arthrose</li>
+						<li>Entorse</li>
+						<li>Tendinite</li>
+						<li>Ataxie</li>
+					</ul>
+				</div>
+				<div class="bg-wood-200 rounded-3xl p-4 text-center break-inside-avoid mt-4">
+					<img src="/logo.png" class="mx-auto w-40" />
+				</div>
+				<div class="bg-wood-200 rounded-3xl p-4 text-center break-inside-avoid mt-4">
+					<h4 class="font-heading text-lg uppercase font-bold mb-6">Changements de comportements</h4>
+					<ul class="text-slate-400 italic">
+						<li>Animal prostré</li>
+						<li>Inhabituellement calme</li>
+					</ul>
+				</div>
+				<div class="bg-wood-200 rounded-3xl p-4 text-center break-inside-avoid mt-4">
+					<img src="/logo.png" class="mx-auto w-20" />
+				</div>
+				<div class="bg-wood-200 rounded-3xl p-4 text-center break-inside-avoid mt-4">
+					<h4 class="font-heading text-lg uppercase font-bold mb-6">Troubles chroniques</h4>
+					<ul class="text-slate-400 italic">
+						<li>Affections digestives</li>
+						<li>Affections respiratoires</li>
+						<li>Affections uro-génitales</li>
+						<li>Infertilité inexpliquée</li>
+					</ul>
+				</div>
+				<div class="bg-wood-200 rounded-3xl p-4 text-center break-inside-avoid mt-4">
+					<img src="/logo.png" class="mx-auto w-80" />
+				</div>
+			</div>
+			<h3 class="font-heading text-2xl md:text-3xl mb-12">Motifs de consultation - Spécifiques selon les espèces</h3>
+			<div class="grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-4">
+				<div class="flex flex-col text-center">
+					<h4 class="font-heading text-lg uppercase font-bold mb-6">Cheval</h4>
+					<img src="/logo.png" class="w-48 m-auto" />
+					<ul class="text-slate-400 italic">
+						<li>Difficultés à donner les pieds</li>
+						<li>Difficultés au travail</li>
+						<li>Problème de succion</li>
+						<li>Retour en chaleurs tardif</li>
+						<li>Post-mise bas</li>
+					</ul>
+				</div>
+				<div class="flex flex-col text-center">
+					<h4 class="font-heading text-lg uppercase font-bold">Chien / Chat</h4>
+					<img src="/logo.png" class="w-48 m-auto" />
+					<ul class="text-slate-400 italic">
+						<li>Difficultés à se lever</li>
+						<li>Difficultés à sauter</li>
+						<li>Post-mise bas</li>
+						<li>Dysplasie</li>
+						<li>Hernie discale</li>
+						<li>AVC</li>
+						<li>Épilepsie</li>
+					</ul>
+				</div>
+				<div class="flex flex-col text-center">
+					<h4 class="font-heading text-lg uppercase font-bold">Vache</h4>
+					<img src="/logo.png" class="w-48 m-auto" />
+					<ul class="text-slate-400 italic">
+						<li>Vache couchée</li>
+						<li>Baisse de production laitière</li>
+						<li>Retour en chaleurs tardif</li>
+						<li>Post-mise bas</li>
+						<li>Problème de succion</li>
+						<li>Suivi de troupeau</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- Definition -->
+		<section class="max-w-[1020px] w-full m-auto p-12">
+			<!-- TODO grosse quote qui flotte -->
+			<blockquote class="font-heading bg-wood-200 text-wood-500 border-4 border-wood-500 p-4 md:p-8 rounded mx-2 md:mx-12 relative before:content-['«'] before:text-8xl md:before:text-9xl before:absolute before:-left-10 md:before:-left-14 before:-top-6">
+				<p class="text-lg md:text-xl">
+					On entend par <span class="italic">"acte d'ostéopathie animale"</span> les manipulations ayant pour seul but de
+					prévenir ou de traiter des troubles fonctionnels du corps de l'animal, à l'exclusion des pathologies organiques qui nécessitent une intervention thérapeutique, médicale,
+					chirurgicale, médicamenteuse ou par agents physiques.
+				</p>
+			</blockquote>
+		</section>
+
+		<!-- News -->
+		<section class="max-w-[1020px] w-full m-auto p-12" id="actualite">
+			<h2 class="font-heading text-3xl md:text-5xl mb-16">Mon actualité</h2>
+
+			<p class="text-lg md:text-xl">
+				Retrouvez mon actualité sur ma <a href={facebook} class="font-bold hover:underline">page Facebook</a> !
+			</p>
+		</section>
+
+		<!-- Contact -->
+		<section class="max-w-[1020px] w-full m-auto p-12" id="contact">
+			<h2 class="font-heading text-3xl md:text-5xl mb-16">Prendre rendez-vous</h2>
+
+			<div class="flex flex-col gap-8 md:flex-row justify-between items-center">
+				<div class="text-lg text-center ">
+					<p class="text-2xl font-heading font-bold">{fullName}</p>
+					<p><span class="italic">{tagLine}</span> - {id}</p>
+					<p><PhoneIcon class="w-5 inline-block mr-2 text-slate-400" /><a href=`tel:${phone}`>{phone}</a></p>
+					<p><EnvelopeIcon class="w-5 inline-block mr-2 text-slate-400" /><a href=`mailto:${email}`>{email}</a></p>
+					<p><a href={facebook} class="font-bold hover:underline">Facebook</a></p>
+				</div>
+	
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44678.57181259009!2d5.86515298317552!3d45.58228721780422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478ba85708695f63%3A0xd5c21acfa63d899c!2s73000%20Chamb%C3%A9ry!5e0!3m2!1sfr!2sfr!4v1715879631300!5m2!1sfr!2sfr"
+					height="300"
+					class="rounded w-full md:w-[500px] border-2 border-slate-400"
+					allowfullscreen="false"
+					loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade" />
+			</div>
+		</section>
+	</main>
+</Layout>
