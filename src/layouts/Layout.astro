@@ -12,7 +12,10 @@ const { description, title } = Astro.props;
 	<head>
 		<meta charset="UTF-8" />
 		<title>{title}</title>
+		<meta property="og:title" content={title} />
 		<meta name="description" content={description} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content="/lea-kormas/logo.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="icon" href="/lea-kormas/favicon.png" />
