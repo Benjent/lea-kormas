@@ -7,6 +7,8 @@ export default {
 				wood: {
 					200: '#f4eee8',
 					500: '#cf976c',
+					600: '#c17741',
+					700: '#c1611b',
 				}
 			},
 			fontFamily: {
