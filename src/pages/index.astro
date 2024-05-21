@@ -1,7 +1,10 @@
 ---
-import EnvelopeIcon from 'astro-heroicons/outline/Envelope.astro';
-import PhoneIcon from 'astro-heroicons/outline/Phone.astro';
+import EnvelopeIcon from 'astro-heroicons/mini/Envelope.astro';
+import PhoneIcon from 'astro-heroicons/mini/Phone.astro';
 import Layout from '../layouts/Layout.astro';
+import Container from '../components/Container.astro';
+import Review from '../components/Review.astro';
+import FacebookIcon from '../components/FacebookIcon.astro';
 
 const fullName = "Léa Kormas"
 const id = "OA1132"
@@ -12,146 +15,231 @@ const facebook = "https://www.facebook.com/people/Ost%C3%A9opathe-Animalier-Savo
 ---
 
 <Layout title="Léa Kormas - Ostéopathe Animalier Savoie" description="Ostéopathe Animalier à Chambéry en Savoie.">
-	<main class="" id="accueil">
+	<main id="accueil">
 		<!-- Intro -->
-		<section class="max-w-[1020px] w-full m-auto px-12 py-16">
-			<div class="flex items-center gap-8 md:gap-16 my-12">
-				<img src="/lea-kormas/logo-wood-2864.webp" alt="Léa Kormas logo" class="w-32 sm:w-40 md:w-60" />
-				<div>
-					<h1 class="font-heading text-4xl md:text-8xl text-wood-700">{fullName}</h1>
-					<p class="font-heading text-2xl md:text-4xl">{tagLine}</p>
-				</div>
+		<section class="bg-[url('/lea-kormas/cow.webp')] bg-cover bg-[center_20%] bg-fixed">
+			<div class="backdrop-blur-sm h-[93vh] backdrop-grayscale-[50%] backdrop-brightness-[40%] text-white pt-10">
+				<Container>
+					<div class="flex items-center gap-8 md:gap-16 my-12">
+						<img src="/lea-kormas/logo-wood-2864.webp" alt="Léa Kormas logo" class="w-32 sm:w-40 md:w-60" />
+						<div>
+							<h1 class="font-heading text-4xl md:text-8xl text-wood-300">{fullName}</h1>
+							<p class="font-heading text-2xl md:text-4xl">{tagLine}</p>
+						</div>
+					</div>
+					<p class="text-lg md:text-2xl text-center mt-20">
+						<em class="text-wood-300 not-italic">Ostéopathe animalier</em> basée à <em class="text-wood-300 not-italic">Chambéry</em>, disponible sur toute la <em class="text-wood-300 not-italic">Savoie</em>.
+					</p>
+				</Container>
 			</div>
-			<p class="text-lg md:text-2xl text-center mt-20"><em class="text-wood-700 not-italic">Ostéopathe animalier</em> basée à <em class="text-wood-700 not-italic">Chambéry</em>, disponible sur toute la <em class="text-wood-700 not-italic">Savoie</em>.</p>
 		</section>
 
 		<!-- When & why -->
-		<section class="max-w-[1020px] w-full m-auto px-12 py-16" id="prestations">
-			<h2 class="font-heading text-wood-700 text-3xl md:text-5xl mb-8">Quand et pourquoi ?</h2>
+		<section class="bg-white" id="prestations">
+			<Container>
+				<h2 class="font-heading text-wood-700 text-3xl md:text-5xl mb-8">Quand et pourquoi ?</h2>
+	
+				<h3 class="font-heading text-2xl md:text-3xl mb-12">Motifs de consultation - Pour tous les animaux</h3>
+				<div class="columns-1 sm:columns-2 md:columns-3 gap-5 mb-12">
+					<div class="bg-wood-200 rounded-lg p-4 text-center break-inside-avoid">
+						<h4 class="font-heading text-lg uppercase tracking-wider font-bold mb-6">Troubles locomoteurs</h4>
+						<ul class="text-slate-400 italic">
+							<li>Boiterie</li>
+							<li>Allure irrégulière</li>
+							<li>Démarche asymétrique</li>
+							<li>Asymétrie musculaire</li>
+							<li>Défaut d'aplombs</li>
+							<li>Douleur dorsale</li>
+							<li>Post-traumatisme/accident</li>
+							<li>Suivi de croissance</li>
+							<li>Post-opératoire</li>
+							<li>Sportif</li>
+						</ul>
+					</div>
+					<img src="/lea-kormas/gray-horse.webp" alt="Léa Kormas massant la croupe d'un cheval" class="rounded-lg break-inside-avoid mt-5" />
+					<div class="bg-wood-200 rounded-lg p-4 text-center break-inside-avoid mt-5">
+						<h4 class="font-heading text-lg uppercase tracking-wider font-bold mb-6">Collaborations vétérinaires</h4>
+						<ul class="text-slate-400 italic">
+							<li>Arthrose</li>
+							<li>Entorse</li>
+							<li>Tendinite</li>
+							<li>Ataxie</li>
+						</ul>
+					</div>
+					<img src="/lea-kormas/dog.webp" alt="Léa Kormas traitant les pattes d'un chien" class="rounded-lg break-inside-avoid mt-5" />
+					<div class="bg-wood-200 rounded-lg p-4 text-center break-inside-avoid mt-5">
+						<h4 class="font-heading text-lg uppercase tracking-wider font-bold mb-6">Changements de comportements</h4>
+						<ul class="text-slate-400 italic">
+							<li>Animal prostré</li>
+							<li>Inhabituellement calme</li>
+						</ul>
+					</div>
+					<img src="/lea-kormas/brown-horse.webp" alt="Léa Kormas travaillant le genou d'un cheval" class="rounded-lg break-inside-avoid mt-5" />
+					<div class="bg-wood-200 rounded-lg p-4 text-center break-inside-avoid mt-5">
+						<h4 class="font-heading text-lg uppercase tracking-wider font-bold mb-6">Troubles chroniques</h4>
+						<ul class="text-slate-400 italic">
+							<li>Affections digestives</li>
+							<li>Affections respiratoires</li>
+							<li>Affections uro-génitales</li>
+							<li>Infertilité inexpliquée</li>
+						</ul>
+					</div>
+				</div>
+				<h3 class="font-heading text-2xl md:text-3xl mb-12 mt-20">Motifs de consultation - Spécifiques selon les espèces</h3>
+				<div class="grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-4">
+					<div class="flex flex-col text-center">
+						<h4 class="font-heading text-lg uppercase font-bold tracking-wider">Cheval</h4>
+						<img src="/lea-kormas/brown-horse-2.webp" alt="Léa Kormas étirant la patte d'un cheval" class="w-48 mx-auto my-4 rounded-3xl" />
+						<ul class="text-slate-400 italic">
+							<li>Difficultés à donner les pieds</li>
+							<li>Difficultés au travail</li>
+							<li>Problème de succion</li>
+							<li>Retour en chaleurs tardif</li>
+							<li>Post-mise bas</li>
+						</ul>
+					</div>
+					<div class="flex flex-col text-center">
+						<h4 class="font-heading text-lg uppercase font-bold tracking-wider">Chien / Chat</h4>
+						<img src="/lea-kormas/cat.webp" alt="Léa Kormas caressant un chat" class="w-48 mx-auto my-4 rounded-3xl" />
+						<ul class="text-slate-400 italic">
+							<li>Difficultés à se lever</li>
+							<li>Difficultés à sauter</li>
+							<li>Post-mise bas</li>
+							<li>Dysplasie</li>
+							<li>Hernie discale</li>
+							<li>AVC</li>
+							<li>Épilepsie</li>
+						</ul>
+					</div>
+					<div class="flex flex-col text-center">
+						<h4 class="font-heading text-lg uppercase font-bold tracking-wider">Vache</h4>
+						<img src="/lea-kormas/cow.webp" alt="Léa Kormas massant la tête d'une vache" class="w-48 mx-auto my-4 rounded-3xl" />
+						<ul class="text-slate-400 italic">
+							<li>Vache couchée</li>
+							<li>Baisse de production laitière</li>
+							<li>Retour en chaleurs tardif</li>
+							<li>Post-mise bas</li>
+							<li>Problème de succion</li>
+							<li>Suivi de troupeau</li>
+						</ul>
+					</div>
+				</div>
+			</Container>
+		</section>
 
-			<h3 class="font-heading text-2xl md:text-3xl mb-12">Motifs de consultation - Pour tous les animaux</h3>
-			<div class="columns-1 sm:columns-2 md:columns-3 gap-4 mb-12">
-				<div class="bg-wood-200 rounded-lg p-4 text-center break-inside-avoid">
-					<h4 class="font-heading text-lg uppercase tracking-wider font-bold mb-6">Troubles locomoteurs</h4>
-					<ul class="text-slate-400 italic">
-						<li>Boiterie</li>
-						<li>Allure irrégulière</li>
-						<li>Démarche asymétrique</li>
-						<li>Asymétrie musculaire</li>
-						<li>Défaut d'aplombs</li>
-						<li>Douleur dorsale</li>
-						<li>Post-traumatisme/accident</li>
-						<li>Suivi de croissance</li>
-						<li>Post-opératoire</li>
-						<li>Sportif</li>
-					</ul>
+		<a href=`mailto:${email}` class="relative top-6 block w-fit bg-white text-wood-700 text-center px-4 py-2 rounded-full border-2 border-wood-500 mx-auto uppercase font-heading tracking-widest">Une question ? Contactez-moi !</a>
+
+		<!-- Reviews -->
+		<section class="px-12 py-24 bg-wood-500">
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-[1280px] mx-auto">
+				<div class="md:col-start-1 md:col-span-2 -rotate-3">
+					<Review>
+						Léa a été super !
+						Elle a été très douce avec mon chat.
+						Depuis la séance, ma petite vieille avec une malformation du dos a retrouvé toute une jeunesse.
+						On sent si on la prend dans les bras qu'elle n'est plus crispée et elle ne montre plus de signes de douleur.
+						Vraiment au top !
+						N'hésitez pas <span class="not-italic">😊</span>
+					</Review>
 				</div>
-				<img src="/lea-kormas/gray-horse.webp" alt="Léa Kormas massant la croupe d'un cheval" class="rounded-lg break-inside-avoid mt-4" />
-				<div class="bg-wood-200 rounded-lg p-4 text-center break-inside-avoid mt-4">
-					<h4 class="font-heading text-lg uppercase tracking-wider font-bold mb-6">Collaborations vétérinaires</h4>
-					<ul class="text-slate-400 italic">
-						<li>Arthrose</li>
-						<li>Entorse</li>
-						<li>Tendinite</li>
-						<li>Ataxie</li>
-					</ul>
+				<div class="md:col-start-2 md:col-span-2 -mt-4 md:-mt-16 rotate-1">
+					<Review>
+						Léa est venue soigner certains de nos chevaux à la ferme équestre.
+						Nous l'avons trouvée très sympa, compétente et de bon conseil.
+						Elle s'adapte aux animaux selon leur pathologie, leur caractère et leur âge.
+						Et elle s'adapte aussi aux demandes et attentes des propriétaires <span class="not-italic">😜</span>
+						Nous recommandons Léa et nous referons sûrement appel à elle pour soigner nos loulous !
+					</Review>
 				</div>
-				<img src="/lea-kormas/dog.webp" alt="Léa Kormas traitant les pattes d'un chien" class="rounded-lg break-inside-avoid mt-4" />
-				<div class="bg-wood-200 rounded-lg p-4 text-center break-inside-avoid mt-4">
-					<h4 class="font-heading text-lg uppercase tracking-wider font-bold mb-6">Changements de comportements</h4>
-					<ul class="text-slate-400 italic">
-						<li>Animal prostré</li>
-						<li>Inhabituellement calme</li>
-					</ul>
+				<div class="md:col-start-1 md:col-span-2 -mt-4 md:-mt-16">
+					<Review>
+						Je recommande vivement Léa qui a soigné mon malinois.
+						Très bonne approche avec le chien qui lui a tout de suite fait confiance.
+						Très professionnelle et douce, elle prend son temps pour expliquer tout ce qu'elle fait.
+					</Review>
 				</div>
-				<img src="/lea-kormas/brown-horse.webp" alt="Léa Kormas travaillant le genou d'un cheval" class="rounded-lg break-inside-avoid mt-4" />
-				<div class="bg-wood-200 rounded-lg p-4 text-center break-inside-avoid mt-4">
-					<h4 class="font-heading text-lg uppercase tracking-wider font-bold mb-6">Troubles chroniques</h4>
-					<ul class="text-slate-400 italic">
-						<li>Affections digestives</li>
-						<li>Affections respiratoires</li>
-						<li>Affections uro-génitales</li>
-						<li>Infertilité inexpliquée</li>
-					</ul>
+				<div class="md:col-start-2 md:col-span-2 -mt-4 md:-mt-16 -rotate-2">
+					<Review>
+						Léa a vu mon chat, lors d'une consultation d'ostéopathie animale, car il montrait des signes de gêne lorsqu'il sautait.
+						Durant la séance, Léa a été très douce avec mon chat, qui au début n'était pas rassuré (peu de temps après, il se laissait totalement faire !!).
+						Depuis, j'ai remarqué une nette amélioration.
+						Je recommande !!
+					</Review>
 				</div>
-			</div>
-			<h3 class="font-heading text-2xl md:text-3xl mb-12">Motifs de consultation - Spécifiques selon les espèces</h3>
-			<div class="grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-4">
-				<div class="flex flex-col text-center">
-					<h4 class="font-heading text-lg uppercase font-bold tracking-wider">Cheval</h4>
-					<img src="/lea-kormas/brown-horse-2.webp" alt="Léa Kormas étirant la patte d'un cheval" class="w-48 mx-auto my-4 rounded-3xl" />
-					<ul class="text-slate-400 italic">
-						<li>Difficultés à donner les pieds</li>
-						<li>Difficultés au travail</li>
-						<li>Problème de succion</li>
-						<li>Retour en chaleurs tardif</li>
-						<li>Post-mise bas</li>
-					</ul>
+				<div class="md:col-start-1 md:col-span-2 -mt-4 md:-mt-16 rotate-2">
+					<Review>
+						Nous avons un berger australien de 5 mois et avons fait appel à Léa pour qu'elle nous conseille et nous explique les points fondamentaux pour que notre chienne soit en bonne santé.
+						C'est une ostéo vraiment au top, elle a pris tout le temps nécessaire pour examiner notre chienne, nous parler, nous dire sur quels points nous devions être vigilants et pourquoi nous devions l'être.
+						Elle est vraiment passionnée par son métier et cela se sent dans sa manière de parler et d'expliquer les choses.
+						Franchement, je vous recommande vivement de faire appel à elle, elle apporte vraiment beaucoup d'éléments pour mieux comprendre son chien !!
+					</Review>
 				</div>
-				<div class="flex flex-col text-center">
-					<h4 class="font-heading text-lg uppercase font-bold tracking-wider">Chien / Chat</h4>
-					<img src="/lea-kormas/cat.webp" alt="Léa Kormas caressant un chat" class="w-48 mx-auto my-4 rounded-3xl" />
-					<ul class="text-slate-400 italic">
-						<li>Difficultés à se lever</li>
-						<li>Difficultés à sauter</li>
-						<li>Post-mise bas</li>
-						<li>Dysplasie</li>
-						<li>Hernie discale</li>
-						<li>AVC</li>
-						<li>Épilepsie</li>
-					</ul>
-				</div>
-				<div class="flex flex-col text-center">
-					<h4 class="font-heading text-lg uppercase font-bold tracking-wider">Vache</h4>
-					<img src="/lea-kormas/cow.webp" alt="Léa Kormas massant la tête d'une vache" class="w-48 mx-auto my-4 rounded-3xl" />
-					<ul class="text-slate-400 italic">
-						<li>Vache couchée</li>
-						<li>Baisse de production laitière</li>
-						<li>Retour en chaleurs tardif</li>
-						<li>Post-mise bas</li>
-						<li>Problème de succion</li>
-						<li>Suivi de troupeau</li>
-					</ul>
+				<div class="md:col-start-2 md:col-span-2 -mt-4 md:-mt-16">
+					<Review>
+						Très à l'écoute et compétente, avec des recommandations aiguisées et complètes.
+						Léa s'est occupée de mes deux chiens avec beaucoup de douceur et de professionnalisme.
+						Ils étaient cuits après la séance !
+						Merci Léa !
+					</Review>
 				</div>
 			</div>
 		</section>
 
 		<!-- Definition -->
-		<section class="px-12 py-16 bg-wood-700">
-			<blockquote class="max-w-[1020px] w-full mx-auto font-heading text-wood-200 border-4 border-wood-500 p-4 md:p-8 rounded relative before:content-['«'] before:text-wood-200 before:text-8xl md:before:text-9xl before:absolute before:-left-10 md:before:-left-14 before:-top-6">
-				<p class="text-lg md:text-xl">
-					On entend par <span class="italic">"acte d'ostéopathie animale"</span> les manipulations ayant pour seul but de
-					prévenir ou de traiter des troubles fonctionnels du corps de l'animal, à l'exclusion des pathologies organiques qui nécessitent une intervention thérapeutique, médicale,
-					chirurgicale, médicamenteuse ou par agents physiques.
-				</p>
-			</blockquote>
+		<section class="bg-wood-700">
+			<Container>
+				<blockquote class="font-heading text-wood-200 border-4 border-wood-500 p-4 md:p-8 rounded relative before:content-['«'] before:text-wood-200 before:text-8xl md:before:text-9xl before:absolute before:-left-10 md:before:-left-14 before:-top-6">
+					<p class="text-lg md:text-xl">
+						On entend par <span class="italic">"acte d'ostéopathie animale"</span> les manipulations ayant pour seul but de
+						prévenir ou de traiter des troubles fonctionnels du corps de l'animal, à l'exclusion des pathologies organiques qui nécessitent une intervention thérapeutique, médicale,
+						chirurgicale, médicamenteuse ou par agents physiques.
+					</p>
+				</blockquote>
+
+				<a href=`mailto:${email}` class="animate-pulse block w-fit bg-white text-wood-700 text-center px-4 py-2 rounded-full mx-auto mt-12 uppercase font-heading tracking-widest">Prendre rendez-vous</a>
+			</Container>
 		</section>
 
 		<!-- News -->
-		<section class="max-w-[1020px] w-full m-auto px-12 py-16" id="actualite">
-			<h2 class="font-heading text-wood-700 text-3xl md:text-5xl mb-16">Mon actualité</h2>
-
-			<p class="text-lg md:text-xl">
-				Retrouvez mon actualité sur ma <a href={facebook} class="font-bold underline hover:text-wood-600">page Facebook</a> !
-			</p>
+		<section class="bg-wood-500 text-white relative" id="actualite">
+			<Container>
+				<h2 class="font-heading  text-3xl md:text-5xl mb-16">Mon actualité</h2>
+	
+				<p class="text-lg md:text-xl">
+					Retrouvez mon actualité sur ma <a href={facebook} class="font-bold underline hover:text-wood-200">page Facebook</a> !
+				</p>
+			</Container>
+			<FacebookIcon class="fill-wood-300 w-8 md:w-16 absolute right-12 md:right-40 bottom-0" />
 		</section>
 
 		<!-- Contact -->
-		<section class="max-w-[1020px] w-full m-auto px-12 py-16" id="contact">
-			<h2 class="font-heading text-wood-700 text-3xl md:text-5xl mb-16">Prendre rendez-vous</h2>
+		<section class="bg-white" id="contact">
+			<Container>
+				<h2 class="font-heading text-wood-700 text-3xl md:text-5xl mb-16">Prendre rendez-vous</h2>
+	
+				<div class="flex flex-col gap-8 md:flex-row justify-between items-center">
+					<div class="text-lg text-center">
+						<p class="text-2xl font-heading font-bold text-wood-700">{fullName}</p>
+						<p><span class="italic">{tagLine}</span> - {id}</p>
 
-			<div class="flex flex-col gap-8 md:flex-row justify-between items-center">
-				<div class="text-lg text-center ">
-					<p class="text-2xl font-heading font-bold text-wood-700">{fullName}</p>
-					<p><span class="italic">{tagLine}</span> - {id}</p>
-					<p><PhoneIcon class="w-5 inline-block mr-2 text-slate-400" /><a href=`tel:${phone}`>{phone}</a></p>
-					<p><EnvelopeIcon class="w-5 inline-block mr-2 text-slate-400" /><a href=`mailto:${email}`>{email}</a></p>
-					<p><a href={facebook} class="font-bold underline hover:text-wood-600">Facebook</a></p>
-					<p class="mt-6">Du lundi au vendredi, de 8h à 20h.</p>
+						<p class="mt-6">
+							<PhoneIcon class="w-4 inline-block mr-1 text-slate-400" />
+							<a href=`tel:${phone}` class="font-bold underline hover:text-wood-600">{phone}</a>
+						</p>
+						<p>
+							<EnvelopeIcon class="w-4 inline-block mr-1 text-slate-400" />
+							<a href=`mailto:${email}` class="font-bold underline hover:text-wood-600">{email}</a>
+						</p>
+						<p>
+							<FacebookIcon class="w-4 inline-block mr-1 fill-slate-400" />
+							<a href={facebook} class="font-bold underline hover:text-wood-600">Facebook</a>
+						</p>
+						<p class="mt-6">Du lundi au vendredi, de 8h à 20h.</p>
+					</div>
+	
+					<img src="/lea-kormas/logo-wood-2864.webp" alt="Léa Kormas logo" class="w-32 sm:w-40 md:w-60" />
 				</div>
-
-				<img src="/lea-kormas/logo-wood-2864.webp" alt="Léa Kormas logo" class="w-32 sm:w-40 md:w-60" />
-			</div>
+			</Container>
 		</section>
 	</main>
 </Layout>
