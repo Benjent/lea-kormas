@@ -4,12 +4,13 @@ export default {
 	theme: {
 		extend: {
 			colors: {
+				amber: {
+					650: '#c1611b',
+				},
 				wood: {
 					200: '#f4eee8',
 					300: '#e1cfb8',
 					500: '#cf976c',
-					600: '#c17741',
-					700: '#c1611b',
 				}
 			},
 			fontFamily: {
