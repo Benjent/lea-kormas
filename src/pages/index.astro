@@ -85,10 +85,11 @@ const facebook = "https://www.facebook.com/people/Ost%C3%A9opathe-Animalier-Savo
 						</ul>
 					</div>
 				</div>
+
 				<h3 class="font-heading text-2xl md:text-3xl mb-12 mt-20">Motifs de consultation - Spécifiques selon les espèces</h3>
 				<div class="grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-4">
 					<div class="flex flex-col text-center">
-						<h4 class="font-heading text-lg uppercase font-bold tracking-wider">Cheval</h4>
+						<h4 class="font-heading text-lg uppercase font-bold tracking-wider text-amber-650">Cheval</h4>
 						<img src="/lea-kormas/brown-horse-2.webp" alt="Léa Kormas étirant la patte d'un cheval" class="w-48 mx-auto my-4 rounded-3xl" />
 						<ul class="text-slate-400 italic">
 							<li>Difficultés à donner les pieds</li>
@@ -99,7 +100,7 @@ const facebook = "https://www.facebook.com/people/Ost%C3%A9opathe-Animalier-Savo
 						</ul>
 					</div>
 					<div class="flex flex-col text-center">
-						<h4 class="font-heading text-lg uppercase font-bold tracking-wider">Chien / Chat</h4>
+						<h4 class="font-heading text-lg uppercase font-bold tracking-wide text-amber-650">Chien / Chat</h4>
 						<img src="/lea-kormas/cat.webp" alt="Léa Kormas caressant un chat" class="w-48 mx-auto my-4 rounded-3xl" />
 						<ul class="text-slate-400 italic">
 							<li>Difficultés à se lever</li>
@@ -112,7 +113,7 @@ const facebook = "https://www.facebook.com/people/Ost%C3%A9opathe-Animalier-Savo
 						</ul>
 					</div>
 					<div class="flex flex-col text-center">
-						<h4 class="font-heading text-lg uppercase font-bold tracking-wider">Vache</h4>
+						<h4 class="font-heading text-lg uppercase font-bold tracking-wide text-amber-650">Vache</h4>
 						<img src="/lea-kormas/cow.webp" alt="Léa Kormas massant la tête d'une vache" class="w-48 mx-auto my-4 rounded-3xl" />
 						<ul class="text-slate-400 italic">
 							<li>Vache couchée</li>
@@ -128,13 +129,13 @@ const facebook = "https://www.facebook.com/people/Ost%C3%A9opathe-Animalier-Savo
 		</section>
 
 		<div class="px-12">
-			<a href=`mailto:${email}` class="block w-fit shadow bg-emerald-600 text-white text-center px-6 py-2 rounded-full mx-auto uppercase font-heading font-weight tracking-widest">Une question&nbsp;? Contactez-moi&nbsp;!</a>
+			<a href=`mailto:${email}` class="block w-fit shadow border-blue-400 border-2 text-blue-400 hover:text-white hover:bg-blue-400 transition text-center px-6 py-2 rounded-full mx-auto uppercase font-heading font-weight tracking-widest">Une question&nbsp;? Contactez-moi&nbsp;!</a>
 		</div>
 		
 		<!-- Reviews -->
-		<section class="px-12 py-24">
+		<section class="pl-12 pr-8 pt-12 md:pt-24 -mb-6 md:-mb-12">
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-[1280px] mx-auto px-4 md:px-12">
-				<div class="md:col-start-1 md:col-span-2 -rotate-3">
+				<div class="md:col-start-1 md:col-span-2 -rotate-3 [&>*]:bg-neutral-50">
 					<Review>
 						Léa a été super !
 						Elle a été très douce avec mon chat.
@@ -144,7 +145,7 @@ const facebook = "https://www.facebook.com/people/Ost%C3%A9opathe-Animalier-Savo
 						N'hésitez pas <span class="not-italic">😊</span>
 					</Review>
 				</div>
-				<div class="md:col-start-2 md:col-span-2 -mt-4 md:-mt-16 rotate-1">
+				<div class="md:col-start-2 md:col-span-2 -mt-4 md:-mt-16 rotate-1 [&>*]:bg-white z-10">
 					<Review>
 						Léa est venue soigner certains de nos chevaux à la ferme équestre.
 						Nous l'avons trouvée très sympa, compétente et de bon conseil.
@@ -153,14 +154,14 @@ const facebook = "https://www.facebook.com/people/Ost%C3%A9opathe-Animalier-Savo
 						Nous recommandons Léa et nous referons sûrement appel à elle pour soigner nos loulous !
 					</Review>
 				</div>
-				<div class="md:col-start-1 md:col-span-2 -mt-4 md:-mt-16">
+				<div class="md:col-start-1 md:col-span-2 -mt-4 md:-mt-16 [&>*]:bg-neutral-50">
 					<Review>
 						Je recommande vivement Léa qui a soigné mon malinois.
 						Très bonne approche avec le chien qui lui a tout de suite fait confiance.
 						Très professionnelle et douce, elle prend son temps pour expliquer tout ce qu'elle fait.
 					</Review>
 				</div>
-				<div class="md:col-start-2 md:col-span-2 -mt-4 md:-mt-16 -rotate-2">
+				<div class="md:col-start-2 md:col-span-2 -mt-4 md:-mt-16 -rotate-2 [&>*]:bg-white z-10">
 					<Review>
 						Léa a vu mon chat, lors d'une consultation d'ostéopathie animale, car il montrait des signes de gêne lorsqu'il sautait.
 						Durant la séance, Léa a été très douce avec mon chat, qui au début n'était pas rassuré (peu de temps après, il se laissait totalement faire !!).
@@ -168,7 +169,7 @@ const facebook = "https://www.facebook.com/people/Ost%C3%A9opathe-Animalier-Savo
 						Je recommande !!
 					</Review>
 				</div>
-				<div class="md:col-start-1 md:col-span-2 -mt-4 md:-mt-16 rotate-2">
+				<div class="md:col-start-1 md:col-span-2 -mt-4 md:-mt-16 rotate-2 [&>*]:bg-neutral-50">
 					<Review>
 						Nous avons un berger australien de 5 mois et avons fait appel à Léa pour qu'elle nous conseille et nous explique les points fondamentaux pour que notre chienne soit en bonne santé.
 						C'est une ostéo vraiment au top, elle a pris tout le temps nécessaire pour examiner notre chienne, nous parler, nous dire sur quels points nous devions être vigilants et pourquoi nous devions l'être.
@@ -176,7 +177,7 @@ const facebook = "https://www.facebook.com/people/Ost%C3%A9opathe-Animalier-Savo
 						Franchement, je vous recommande vivement de faire appel à elle, elle apporte vraiment beaucoup d'éléments pour mieux comprendre son chien !!
 					</Review>
 				</div>
-				<div class="md:col-start-2 md:col-span-2 -mt-4 md:-mt-16">
+				<div class="md:col-start-2 md:col-span-2 -mt-4 md:-mt-16 [&>*]:bg-white z-10">
 					<Review>
 						Très à l'écoute et compétente, avec des recommandations aiguisées et complètes.
 						Léa s'est occupée de mes deux chiens avec beaucoup de douceur et de professionnalisme.
@@ -188,17 +189,17 @@ const facebook = "https://www.facebook.com/people/Ost%C3%A9opathe-Animalier-Savo
 		</section>
 
 		<!-- Definition -->
-		<section class="bg-wood-200 text-amber-650">
+		<section class="bg-blue-300 text-white">
 			<Container>
 				<blockquote class="font-heading p-4 md:p-8">
-					<p class="text-lg md:text-xl text-center">
+					<p class="text-lg md:text-2xl text-center">
 						On entend par <span class="italic">"acte d'ostéopathie animale"</span> les manipulations ayant pour seul but de
 						prévenir ou de traiter des troubles fonctionnels du corps de l'animal, à l'exclusion des pathologies organiques qui nécessitent une intervention thérapeutique, médicale,
 						chirurgicale, médicamenteuse ou par agents physiques.
 					</p>
 				</blockquote>
 
-				<a href=`mailto:${email}` class="block w-fit bg-white text-emerald-600 text-center px-6 py-2 rounded-full mx-auto mt-12 uppercase font-heading font-bold tracking-widest">Prendre rendez-vous</a>
+				<a href=`mailto:${email}` class="block w-fit border-white border-2 text-white hover:text-blue-400 hover:bg-white transition text-center px-6 py-2 rounded-full mx-auto mt-12 uppercase font-heading font-bold tracking-widest">Prendre rendez-vous</a>
 			</Container>
 		</section>
 

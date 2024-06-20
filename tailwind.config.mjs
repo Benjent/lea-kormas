@@ -8,6 +8,7 @@ export default {
 					650: '#c1611b',
 				},
 				wood: {
+					100: '#faf4ef',
 					200: '#f4eee8',
 					300: '#e1cfb8',
 					500: '#cf976c',
